@@ -18,7 +18,7 @@ function App() {
     // if no todos saved then user starts with an empty array 
     return saved ? JSON.parse(saved) : [];
   });
-const [userName, setUserName] = useState(() => {
+const [userName] = useState(() => {
     return localStorage.getItem("userName") || "";
   });
 
